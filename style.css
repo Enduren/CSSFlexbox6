@@ -67,7 +67,7 @@ h4{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    background-color: burlywood;
+    background-color: rgb(218, 164, 93);
 }
 .content1,.content2,.content3{
     min-height: 200px;
