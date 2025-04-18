@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+    font-weight: 17px;
+    font-family:sans-serif ;
+    color: #fff;
+
+}
+.container>div{
+    flex:100%;
+
+
+}
+.subContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: black;
+   
+    border-radius: 3px;
+}
+.aside{
+    flex: 1;
+    background-color: aqua;
+}
+.main__container{
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.main__container>div{
+    flex: 100%;
+}
+h4{
+    padding: 10px;
+}
+
+.main{
+    min-height: 250px;
+    background-color: darksalmon;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: burlywood;
+}
+.content1,.content2,.content3{
+    min-height: 200px;
+    background-color: darkgrey;
+    flex: 1;
+    cursor: pointer;
+
+}
+
+
+.footer{
+    flex: 100%;
+    /* padding-right: 300px; */
+    padding: 0px;
+    margin: 0;
+    min-height: 50px;
+    background-color: blueviolet;
+}
+
+.footer_content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.footer_content1,.footer_content2,.footer_content3{
+    min-height: 200px;
+    background-color: darkgrey;
+    flex: 1;
+}
+
+.aside,.main,.content>div,.footer_content>div{
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    text-align: center;
+}
+
+@media only screen and(max-width:768px){
+    .subContainer{
+        flex-direction: column;
+    }
+    .aside{
+        min-height: 50px;
+    }
+}
+
+@media only screen and(max-width:550px){
+    .content>div{
+        flex: 100%;
+    }
+    .content1,.content2,.content3{
+        min-height: 170px !important;
+    }
+    .footer_content{
+        flex: 100%;
+    }
+    .footer_content1,.footer_content2,.footer_content3{
+        min-height: 170px !important;
+    }
+}
+
