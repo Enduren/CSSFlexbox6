@@ -1,3 +1,4 @@
+/* reset */
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body{
    justify-content: center;
    align-items: center;
    min-height: 100vh;
+   /* background-color: chartreuse; */
    
 }
 .container{
@@ -37,13 +39,63 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 50px;
-    background-color: black;
-   
-    border-radius: 3px;
+    background-color: rgb(152, 57, 57);
+    max-width: 100%;
+    border-radius: 8px;
+}
+nav.navbar__menu{
+    
+    background-color: rgb(15, 9, 0);
+    min-height: 25px;
+    min-width: 550px;
+    flex-wrap: wrap;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: flex-end;
+    min-height: 25px;
+    background-color: blue;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+li.navbar__selections{
+    list-style: none;
+    margin-top: 20px;
+    color: rgb(210, 206, 206);
+    justify-content: space-between;
+}
+li.navbar__selections:hover{
+    /* opacity: .5; */
+    background-color: aquamarine;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
 }
 .aside{
     flex: 1;
     background-color: aqua;
+}
+.aside_wrapper{
+    flex-direction: row;
+    padding-top: 20px;
+    min-height: 250px;
+    gap: 10px;
+    background-color: rgb(45, 61, 61);
+}
+.container1,.container2{
+    padding-top: 20px;
+    min-height: 200px;
+    min-width: 250px;
+    background-color: darkgrey;
+    flex: 1;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+
 }
 .main__container{
     flex: 4;
@@ -60,12 +112,34 @@ h4{
 
 .main{
     min-height: 250px;
+    max-height: 350px;
     background-color: darksalmon;
+    
+}
+.main1,.main2,.main3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    background-color: cadetblue;
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.main1,.main2,.main3:hover{
+    cursor: pointer;
+    
 }
 
+/* content */
 .content{
     display: flex;
     flex-wrap: wrap;
+    min-height: 250px;
     gap: 10px;
     background-color: rgb(218, 164, 93);
 }
@@ -74,17 +148,20 @@ h4{
     background-color: darkgrey;
     flex: 1;
     cursor: pointer;
+    margin-top: 20px;
+    
 
 }
 
-
+/* Footer */
 .footer{
     flex: 100%;
     /* padding-right: 300px; */
     padding: 0px;
     margin: 0;
-    min-height: 50px;
+    min-height: 250px;
     background-color: blueviolet;
+    box-sizing: border-box;
 }
 
 .footer_content{
@@ -102,7 +179,7 @@ h4{
 .aside,.main,.content>div,.footer_content>div{
     display: flex;
     justify-content: center;
-    border-radius: 3px;
+    border-radius: 8px;
     text-align: center;
 }
 
