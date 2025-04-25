@@ -11,6 +11,7 @@ body{
    align-items: center;
    min-height: 100vh;
    /* background-color: chartreuse; */
+   max-width: 1800px;
    
 }
 .container{
@@ -97,6 +98,8 @@ li.navbar__selections:hover{
     border-radius: 8px;
 
 }
+
+
 .main__container{
     flex: 4;
     display: flex;
@@ -181,6 +184,19 @@ h4{
     justify-content: center;
     border-radius: 8px;
     text-align: center;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+    header{
+        width: 100%;
+    }
+    div.aside_wrapper{
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+   
 }
 
 @media only screen and(max-width:768px){
