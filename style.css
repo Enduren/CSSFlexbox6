@@ -144,7 +144,9 @@ h4{
     flex-wrap: wrap;
     min-height: 250px;
     gap: 10px;
+    padding-right: 10px;
     background-color: rgb(218, 164, 93);
+    border: 2px solid black;
 }
 .content1,.content2,.content3{
     min-height: 200px;
@@ -152,6 +154,7 @@ h4{
     flex: 1;
     cursor: pointer;
     margin-top: 20px;
+    border: 2px solid black;
     
 
 }
