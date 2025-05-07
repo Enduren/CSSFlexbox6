@@ -79,6 +79,7 @@ li.navbar__selections:hover{
 .aside{
     flex: 1;
     background-color: aqua;
+    
 }
 .aside_wrapper{
     flex-direction: row;
@@ -98,6 +99,7 @@ li.navbar__selections:hover{
     cursor: pointer;
     margin-top: 20px;
     border-radius: 8px;
+    border: 8px solid rgb(235, 233, 233);
 
 }
 
